@@ -1,0 +1,190 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and navigation styles */
+header {
+    background-color: #C8AD7F; /* LIGHT FRENCH BEIGE color theme */
+    color: #333;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    color: #ff9d00;
+    padding: 2px;
+}
+
+nav ul li a:hover {
+    color: #de8a03;
+}
+
+/* Section styles */
+section {
+    padding: 2rem;
+    background-color: #C8AD7F; /* LIGHT FRENCH BEIGE color theme */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+#downloadResume a {
+    text-decoration: none;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0A1929; /* YALE BLUE color theme */
+}
+
+/* Content styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    background-color: #FCFFD5; /* SOAP color theme */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.education-entry,
+.experience-entry {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.skills {
+    padding: 2rem;
+    background-color: #C8AD7F; /* LIGHT FRENCH BEIGE color theme */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.skills li {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.skills img {
+    width: 80px; /* Adjust the image width as needed */
+    height: 80px; /* Adjust the image height as needed */
+    object-fit: contain;
+}
+
+
+
+.skill-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-card img {
+    width: 30px; /* Adjust the image width as needed */
+    height: 30px; /* Adjust the image height as needed */
+}
+
+
+/* Button styles */
+#downloadResume {
+    background-color: #ff9d00; /* LIGHT FRENCH BEIGE color theme */
+    height:3.5rem;
+   width: 9rem;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px auto 0; /* Center vertically and horizontally */
+    display: block; /* Ensures the button takes full width */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+#downloadResume:hover {
+    background-color: #A8996E; /* Slightly darker shade for hover */
+}
+
+/* ... Previous styles ... */
+
+/* Sticky and blurring navigation bar */
+#navbar {
+    position: fixed;
+    height: 4rem; /* Increased height */
+    top: 0;
+    width: 100%;
+    background-color: rgba(81, 70, 52, 0.95); /* LIGHT FRENCH BEIGE color theme */
+    backdrop-filter: blur(10px); /* Blur initially */
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter background color when scrolled */
+    backdrop-filter: blur(5px); /* Less blur when scrolled */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Increase space between "About" section and navbar */
+#about {
+    margin-top: 4rem; /* Add sufficient space */
+}
+
+/* ... Remaining styles ... */
